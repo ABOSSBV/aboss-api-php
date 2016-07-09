@@ -16,36 +16,35 @@ The /public_events GET call will provide you with a JSON output of all events th
 
 ### URL Structure
 
-#### ARTIST
+##### ARTIST
 https://data.a-boss.net/v1/artist/[projectId]/public_events
 
-#### AGENCY
+##### AGENCY
 https://data.a-boss.net/v1/agency/[agencyId]/[projectId]/public_events
 
 ### Variables
-The public_events call returns the following variables:
-```JSON
-  from (Date in Y-m-d format)
-  to (Date in Y-m-d format)
-  Output
-  [id] => [Event ID]
-  [project] => [Project Title]
-  [title] => [Event Title]
-  [eventType] => [Event Type]
-  [start] => [Event Start DateTime]
-  [end] => [Event End DateTime]
-  [tba] => [true or false]
-  [allday] => [true or false]
-  [status] => [Event Status]
-  [website] => [Event Website URL]
-  [occupancyRate] => [Occupancy Rate in percentage]
-  [ticketLink] => [Ticket URL]
-  [location] =>
+The public_events call accepts the following variables:
+- from (Date in Y-m-d format)
+- to (Date in Y-m-d format)
+
+### Output
+  - [id] => [Event ID]
+  - [project] => [Project Title]
+  - [title] => [Event Title]
+  - [eventType] => [Event Type]
+  - [start] => [Event Start DateTime]
+  - [end] => [Event End DateTime]
+  - [tba] => [true or false]
+  - [allday] => [true or false]
+  - [status] => [Event Status]
+  - [website] => [Event Website URL]
+  - [occupancyRate] => [Occupancy Rate in percentage]
+  - [ticketLink] => [Ticket URL]
+  - [location] =>
     (
-      [title] => [Location Title]
-      [country] => [Location Country]
-      [city] => [Location City]
-      [website] => [Location Website]
+      - [title] => [Location Title]
+      - [country] => [Location Country]
+      - [city] => [Location City]
+      - [website] => [Location Website]
     )
-  [lineUp] => [Event Line-Up]
-```
+  - [lineUp] => [Event Line-Up]
